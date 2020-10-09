@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements Communicator {
 
         FirstFragment firstFragment = new FirstFragment();
         //SecondFragment secondFragment = new SecondFragment();
-         sf = new SecondFragment();
+         sf = new SecondFragment(this);
 
         transaction.add( R.id.linearLayoutContainer1, firstFragment,"FirstFragment");
         transaction.add( R.id.linearLayoutContainer2, sf,"SecondFragment");
